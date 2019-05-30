@@ -1,0 +1,248 @@
+<%= search_form_for @q, :class => collapse_search_form, :id => "recipes_filters" do |f| %>
+  <p class="lead">Narrow results:</p>
+
+  <div class="form-group">
+    <%= f.label :ingredient1, "Ingredient1" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ingredient1_gteq, :class => "form-control", :placeholder => "Ingredient1 greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ingredient1_lteq, :class => "form-control", :placeholder => "Ingredient1 less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :total_carbohydrates, "Total carbohydrates" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :total_carbohydrates_gteq, :class => "form-control", :placeholder => "Total carbohydrates greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :total_carbohydrates_lteq, :class => "form-control", :placeholder => "Total carbohydrates less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :total_fats, "Total fats" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :total_fats_gteq, :class => "form-control", :placeholder => "Total fats greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :total_fats_lteq, :class => "form-control", :placeholder => "Total fats less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :total_proteins, "Total proteins" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :total_proteins_gteq, :class => "form-control", :placeholder => "Total proteins greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :total_proteins_lteq, :class => "form-control", :placeholder => "Total proteins less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :total_calories, "Total calories" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :total_calories_gteq, :class => "form-control", :placeholder => "Total calories greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :total_calories_lteq, :class => "form-control", :placeholder => "Total calories less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing5_metr_cont, "Ing5 metr contains" %>
+    <%= f.text_field :ing5_metr_cont, :class => "form-control", :placeholder => "Ing5 metr contains" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing5_quant, "Ing5 quant" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ing5_quant_gteq, :class => "form-control", :placeholder => "Ing5 quant greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ing5_quant_lteq, :class => "form-control", :placeholder => "Ing5 quant less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ingredient5, "Ingredient5" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ingredient5_gteq, :class => "form-control", :placeholder => "Ingredient5 greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ingredient5_lteq, :class => "form-control", :placeholder => "Ingredient5 less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing4_metr_cont, "Ing4 metr contains" %>
+    <%= f.text_field :ing4_metr_cont, :class => "form-control", :placeholder => "Ing4 metr contains" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing4_quant, "Ing4 quant" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ing4_quant_gteq, :class => "form-control", :placeholder => "Ing4 quant greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ing4_quant_lteq, :class => "form-control", :placeholder => "Ing4 quant less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ingredient4, "Ingredient4" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ingredient4_gteq, :class => "form-control", :placeholder => "Ingredient4 greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ingredient4_lteq, :class => "form-control", :placeholder => "Ingredient4 less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing3_metr_cont, "Ing3 metr contains" %>
+    <%= f.text_field :ing3_metr_cont, :class => "form-control", :placeholder => "Ing3 metr contains" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing3_quant, "Ing3 quant" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ing3_quant_gteq, :class => "form-control", :placeholder => "Ing3 quant greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ing3_quant_lteq, :class => "form-control", :placeholder => "Ing3 quant less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ingredient3, "Ingredient3" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ingredient3_gteq, :class => "form-control", :placeholder => "Ingredient3 greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ingredient3_lteq, :class => "form-control", :placeholder => "Ingredient3 less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing2_metr_cont, "Ing2 metr contains" %>
+    <%= f.text_field :ing2_metr_cont, :class => "form-control", :placeholder => "Ing2 metr contains" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing2_quant, "Ing2 quant" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ing2_quant_gteq, :class => "form-control", :placeholder => "Ing2 quant greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ing2_quant_lteq, :class => "form-control", :placeholder => "Ing2 quant less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ingredient2, "Ingredient2" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ingredient2_gteq, :class => "form-control", :placeholder => "Ingredient2 greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ingredient2_lteq, :class => "form-control", :placeholder => "Ingredient2 less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing1_metr_cont, "Ing1 metr contains" %>
+    <%= f.text_field :ing1_metr_cont, :class => "form-control", :placeholder => "Ing1 metr contains" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :ing1_quant, "Ing1 quant" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <%= f.text_field :ing1_quant_gteq, :class => "form-control", :placeholder => "Ing1 quant greater than or equal to" %>
+      </div>
+      <div class='col-md-6'>
+        <%= f.text_field :ing1_quant_lteq, :class => "form-control", :placeholder => "Ing1 quant less than or equal to" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :created_at, "Created at" %>
+    <div class="row">
+      <div class='col-md-6 mb-1'>
+        <div class='input-group date' id='created_atgteqPicker' data-target-input="nearest">
+          <%= f.text_field :created_at_gteq, :class => "form-control datetimepicker-input", :placeholder => "Created at greater than or equal to", :data => {:target => '#created_atgteqPicker'} %>
+          <div class="input-group-append" data-target='#created_atgteqPicker' data-toggle="datetimepicker">
+            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+          </div>
+        </div>
+      </div>
+
+      <div class='col-md-6'>
+        <div class='input-group date' id='created_atlteqPicker' data-target-input="nearest">
+          <%= f.text_field :created_at_lteq, :class => "form-control datetimepicker-input", :placeholder => "Created at less than or equal to", :data => {:target => '#created_atlteqPicker'} %>
+          <div class="input-group-append" data-target='#created_atlteqPicker' data-toggle="datetimepicker">
+            <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+      $(function () {
+          $('#created_atgteqPicker').datetimepicker({
+              format: 'YYYY-MM-DD hh:mm:SS'
+          });
+          $('#created_atlteqPicker').datetimepicker({
+              useCurrent: false,
+              format: 'YYYY-MM-DD hh:mm:SS'
+          });
+          $('#created_atgteqPicker').on("dp.change", function (e) {
+              $('#created_atlteqPicker').data("DateTimePicker").minDate(e.date);
+          });
+          $('#created_atlteqPicker').on("dp.change", function (e) {
+              $('#created_atgteqPicker').data("DateTimePicker").maxDate(e.date);
+          });
+      });
+  </script>
+
+
+
+
+  <%= f.submit :class => "btn btn-primary btn-block mb-1" %>
+
+  <a href="/recipes" class="btn btn-outline-secondary btn-block mb-1">Clear filters</a>
+
+<% end %>
+
+<a class="btn btn-outline-secondary btn-block mb-1" data-toggle="collapse" href="#recipes_filters">
+  Show filters
+</a>
