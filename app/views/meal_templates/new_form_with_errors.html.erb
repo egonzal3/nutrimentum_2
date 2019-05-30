@@ -1,0 +1,44 @@
+<!-- Validation failure messages -->
+<% if @meal.present? %>
+  <% if @meal.errors.any? %>
+    <% @meal.errors.full_messages.each do |message| %>
+      <div class="alert alert-danger">
+        <%= message %>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
+
+<h1>
+  Add a new meal
+</h1>
+
+
+<hr>
+
+<!-- Form meal start -->
+<form action="/create_meal" method="post">
+<!-- Form meal end -->
+
+  <!-- Label and input for eater start -->
+  <div class="form-group">
+    <label for="eater">
+      Eater
+    </label>
+
+    <!-- Input for eater start -->
+    <input type="text" id="eater" name="eater" class="form-control" value="<%= @meal.eater %>">
+    <!-- Input for eater end -->
+  </div>
+  <!-- Label and input for eater end -->
+
+  <button class="btn btn-block btn-outline-secondary">
+    Create meal
+  </button>
+</form>
+
+<hr>
+
+<a href="/meals">
+  Go back
+</a>

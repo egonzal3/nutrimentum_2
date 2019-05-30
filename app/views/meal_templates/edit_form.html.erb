@@ -1,0 +1,32 @@
+<h1>
+  Edit meal #<%= @meal.id %>
+</h1>
+
+<hr>
+
+<!-- Form meal start -->
+<form action="/update_meal/<%= @meal.id %>" method="post">
+<!-- Form meal end -->
+
+  <!-- Label and input for eater start -->
+  <div class="form-group">
+    <label for="eater">
+      Eater
+    </label>
+
+    <!-- Input for eater start -->
+    <input type="text" id="eater" name="eater" class="form-control" value="<%= @meal.eater %>">
+    <!-- Input for eater end -->
+  </div>
+  <!-- Label and input for eater end -->
+
+  <button class="btn btn-block btn-outline-secondary">
+    Update meal
+  </button>
+</form>
+
+<hr>
+
+<a href="/meals">
+  Go back
+</a>
