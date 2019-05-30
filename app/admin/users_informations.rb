@@ -1,4 +1,6 @@
 ActiveAdmin.register UsersInformation do
+
+ permit_params :email, :password, :name, :weight, :height, :date_of_birth, :age
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
