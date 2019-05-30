@@ -1,0 +1,142 @@
+<div class="row mb-3">
+  <div class="col-md-12">
+    <h1>
+      All users informations
+    </h1>
+
+    <a href="/users_informations/new" class="btn btn-block btn-outline-secondary">
+      Add a new users information
+    </a>
+  </div>
+</div>
+
+<!-- Ransack Code start -->
+
+<!-- Ransack Code end -->
+
+<!-- Location Map Code start -->
+
+<!-- Location Map Code end -->
+
+<hr>
+
+<div class="row mb-3">
+  <div class="col-md-12">
+    <table class="table">
+      <tr>
+        <th>
+          ID
+        </th>
+
+        <th>
+          Email
+        </th>
+
+        <th>
+          Password
+        </th>
+
+        <th>
+          Name
+        </th>
+
+        <th>
+          Weight
+        </th>
+
+        <th>
+          Height
+        </th>
+
+        <th>
+          Date of birth
+        </th>
+
+        <th>
+          Age
+        </th>
+
+        <th>
+          Created at
+        </th>
+
+        <th>
+          Updated at
+        </th>
+
+        <th>
+        </th>
+      </tr>
+
+      <% @users_informations.each do |users_information| %>
+      <tr>
+        <!-- Display users_information.id start -->
+        <td>
+          <%= users_information.id %>
+        </td>
+        <!-- Display users_information.id end -->
+
+        <!-- Display users_information.email start -->
+        <td>
+          <%= users_information.email %>
+        </td>
+        <!-- Display users_information.email end -->
+
+        <!-- Display users_information.password start -->
+        <td>
+          <%= users_information.password %>
+        </td>
+        <!-- Display users_information.password end -->
+
+        <!-- Display users_information.name start -->
+        <td>
+          <%= users_information.name %>
+        </td>
+        <!-- Display users_information.name end -->
+
+        <!-- Display users_information.weight start -->
+        <td>
+          <%= users_information.weight %>
+        </td>
+        <!-- Display users_information.weight end -->
+
+        <!-- Display users_information.height start -->
+        <td>
+          <%= users_information.height %>
+        </td>
+        <!-- Display users_information.height end -->
+
+        <!-- Display users_information.date_of_birth start -->
+        <td>
+          <%= users_information.date_of_birth %>
+        </td>
+        <!-- Display users_information.date_of_birth end -->
+
+        <!-- Display users_information.age start -->
+        <td>
+          <%= users_information.age %>
+        </td>
+        <!-- Display users_information.age end -->
+
+        <!-- Display users_information.created_at start -->
+        <td>
+          <%= time_ago_in_words(users_information.created_at) %> ago
+        </td>
+        <!-- Display users_information.created_at end -->
+
+        <!-- Display users_information.updated_at start -->
+        <td>
+          <%= time_ago_in_words(users_information.updated_at) %> ago
+        </td>
+        <!-- Display users_information.updated_at end -->
+
+        <td>
+          <a href="/users_informations/<%= users_information.id %>">
+            Show details
+          </a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
