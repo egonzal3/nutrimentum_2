@@ -1,6 +1,6 @@
 class BaseIngredientsController < ApplicationController
   def index
-    @base_ingredients = BaseIngredient.all
+    @base_ingredients = BaseIngredient.page(params[:page]).per(10)
 
     render("base_ingredient_templates/index.html.erb")
   end

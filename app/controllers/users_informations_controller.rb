@@ -1,6 +1,6 @@
 class UsersInformationsController < ApplicationController
   def index
-    @users_informations = UsersInformation.all
+    @users_informations = UsersInformation.page(params[:page]).per(10)
 
     render("users_information_templates/index.html.erb")
   end
