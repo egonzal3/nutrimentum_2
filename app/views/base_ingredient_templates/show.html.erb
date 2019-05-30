@@ -11,89 +11,69 @@
         </a>
       </div>
 
-      <!-- Edit link base_ingredient start -->
       <div class="col">
         <a href="/base_ingredients/<%= @base_ingredient.id %>/edit" class="btn btn-block btn-outline-secondary">
           Edit base ingredient
         </a>
       </div>
-      <!-- Edit link base_ingredient end -->
 
-      <!-- Delete link base_ingredient start -->
       <div class="col">
         <a href="/delete_base_ingredient/<%= @base_ingredient.id %>" class="btn btn-block btn-outline-secondary">
           Delete base ingredient
         </a>
       </div>
-      <!-- Delete link base_ingredient end -->
     </div>
 
     <dl>
       <dt>
         Name
       </dt>
-      <!-- Display name start -->
       <dd>
         <%= @base_ingredient.name %>
       </dd>
-      <!-- Display name end -->
 
       <dt>
         Calories
       </dt>
-      <!-- Display calories start -->
       <dd>
         <%= @base_ingredient.calories %>
       </dd>
-      <!-- Display calories end -->
 
       <dt>
         Proteins
       </dt>
-      <!-- Display proteins start -->
       <dd>
         <%= @base_ingredient.proteins %>
       </dd>
-      <!-- Display proteins end -->
 
       <dt>
         Fats
       </dt>
-      <!-- Display fats start -->
       <dd>
         <%= @base_ingredient.fats %>
       </dd>
-      <!-- Display fats end -->
 
       <dt>
         Carbohydrates
       </dt>
-      <!-- Display carbohydrates start -->
       <dd>
         <%= @base_ingredient.carbohydrates %>
       </dd>
-      <!-- Display carbohydrates end -->
 
       <dt>
         Created at
       </dt>
-      <!-- Display created_at start -->
       <dd>
         <%= time_ago_in_words(@base_ingredient.created_at) %> ago
       </dd>
-      <!-- Display created_at end -->
 
       <dt>
         Updated at
       </dt>
-      <!-- Display updated_at start -->
       <dd>
         <%= time_ago_in_words(@base_ingredient.updated_at) %> ago
       </dd>
-      <!-- Display updated_at end -->
     </dl>
   </div>
 </div>
 
-<!-- Show Page Customization starts -->
-<!-- Show Page Customization end -->

@@ -11,13 +11,11 @@
         </a>
       </div>
 
-      <!-- Edit link users_information start -->
       <div class="col">
         <a href="/users_informations/<%= @users_information.id %>/edit" class="btn btn-block btn-outline-secondary">
           Edit users information
         </a>
       </div>
-      <!-- Edit link users_information end -->
 
     </div>
 
@@ -25,86 +23,66 @@
       <dt>
         Email
       </dt>
-      <!-- Display email start -->
       <dd>
         <%= @users_information.email %>
       </dd>
-      <!-- Display email end -->
 
       <dt>
         Password
       </dt>
-      <!-- Display password start -->
       <dd>
         <%= @users_information.password %>
       </dd>
-      <!-- Display password end -->
 
       <dt>
         Name
       </dt>
-      <!-- Display name start -->
       <dd>
         <%= @users_information.name %>
       </dd>
-      <!-- Display name end -->
 
       <dt>
         Weight
       </dt>
-      <!-- Display weight start -->
       <dd>
         <%= @users_information.weight %>
       </dd>
-      <!-- Display weight end -->
 
       <dt>
         Height
       </dt>
-      <!-- Display height start -->
       <dd>
         <%= @users_information.height %>
       </dd>
-      <!-- Display height end -->
 
       <dt>
         Date of birth
       </dt>
-      <!-- Display date_of_birth start -->
       <dd>
         <%= @users_information.date_of_birth %>
       </dd>
-      <!-- Display date_of_birth end -->
 
       <dt>
         Age
       </dt>
-      <!-- Display age start -->
       <dd>
         <%= @users_information.age %>
       </dd>
-      <!-- Display age end -->
 
       <dt>
         Created at
       </dt>
-      <!-- Display created_at start -->
       <dd>
         <%= time_ago_in_words(@users_information.created_at) %> ago
       </dd>
-      <!-- Display created_at end -->
 
       <dt>
         Updated at
       </dt>
-      <!-- Display updated_at start -->
       <dd>
         <%= time_ago_in_words(@users_information.updated_at) %> ago
       </dd>
-      <!-- Display updated_at end -->
     </dl>
   </div>
 </div>
 
-<!-- Show Page Customization starts -->
-<!-- Show Page Customization end -->
