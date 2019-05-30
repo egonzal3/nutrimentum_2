@@ -1,0 +1,226 @@
+<div class="row mb-3">
+  <div class="col-md-8 offset-md-2">
+    <h1>
+      Recipe #<%= @recipe.id %> details
+    </h1>
+
+    <div class="row mb-3">
+      <div class="col">
+        <a href="/recipes" class="btn btn-block btn-outline-secondary">
+          Go back
+        </a>
+      </div>
+
+      <!-- Edit link recipe start -->
+      <div class="col">
+        <a href="/recipes/<%= @recipe.id %>/edit" class="btn btn-block btn-outline-secondary">
+          Edit recipe
+        </a>
+      </div>
+      <!-- Edit link recipe end -->
+
+      <!-- Delete link recipe start -->
+      <div class="col">
+        <a href="/delete_recipe/<%= @recipe.id %>" class="btn btn-block btn-outline-secondary">
+          Delete recipe
+        </a>
+      </div>
+      <!-- Delete link recipe end -->
+    </div>
+
+    <dl>
+      <dt>
+        Ingredient1
+      </dt>
+      <!-- Display ingredient1 start -->
+      <dd>
+        <%= @recipe.ingredient1 %>
+      </dd>
+      <!-- Display ingredient1 end -->
+
+      <dt>
+        Ing1 quant
+      </dt>
+      <!-- Display ing1_quant start -->
+      <dd>
+        <%= @recipe.ing1_quant %>
+      </dd>
+      <!-- Display ing1_quant end -->
+
+      <dt>
+        Ing1 metr
+      </dt>
+      <!-- Display ing1_metr start -->
+      <dd>
+        <%= @recipe.ing1_metr %>
+      </dd>
+      <!-- Display ing1_metr end -->
+
+      <dt>
+        Ingredient2
+      </dt>
+      <!-- Display ingredient2 start -->
+      <dd>
+        <%= @recipe.ingredient2 %>
+      </dd>
+      <!-- Display ingredient2 end -->
+
+      <dt>
+        Ing2 quant
+      </dt>
+      <!-- Display ing2_quant start -->
+      <dd>
+        <%= @recipe.ing2_quant %>
+      </dd>
+      <!-- Display ing2_quant end -->
+
+      <dt>
+        Ing2 metr
+      </dt>
+      <!-- Display ing2_metr start -->
+      <dd>
+        <%= @recipe.ing2_metr %>
+      </dd>
+      <!-- Display ing2_metr end -->
+
+      <dt>
+        Ingredient3
+      </dt>
+      <!-- Display ingredient3 start -->
+      <dd>
+        <%= @recipe.ingredient3 %>
+      </dd>
+      <!-- Display ingredient3 end -->
+
+      <dt>
+        Ing3 quant
+      </dt>
+      <!-- Display ing3_quant start -->
+      <dd>
+        <%= @recipe.ing3_quant %>
+      </dd>
+      <!-- Display ing3_quant end -->
+
+      <dt>
+        Ing3 metr
+      </dt>
+      <!-- Display ing3_metr start -->
+      <dd>
+        <%= @recipe.ing3_metr %>
+      </dd>
+      <!-- Display ing3_metr end -->
+
+      <dt>
+        Ingredient4
+      </dt>
+      <!-- Display ingredient4 start -->
+      <dd>
+        <%= @recipe.ingredient4 %>
+      </dd>
+      <!-- Display ingredient4 end -->
+
+      <dt>
+        Ing4 quant
+      </dt>
+      <!-- Display ing4_quant start -->
+      <dd>
+        <%= @recipe.ing4_quant %>
+      </dd>
+      <!-- Display ing4_quant end -->
+
+      <dt>
+        Ing4 metr
+      </dt>
+      <!-- Display ing4_metr start -->
+      <dd>
+        <%= @recipe.ing4_metr %>
+      </dd>
+      <!-- Display ing4_metr end -->
+
+      <dt>
+        Ingredient5
+      </dt>
+      <!-- Display ingredient5 start -->
+      <dd>
+        <%= @recipe.ingredient5 %>
+      </dd>
+      <!-- Display ingredient5 end -->
+
+      <dt>
+        Ing5 quant
+      </dt>
+      <!-- Display ing5_quant start -->
+      <dd>
+        <%= @recipe.ing5_quant %>
+      </dd>
+      <!-- Display ing5_quant end -->
+
+      <dt>
+        Ing5 metr
+      </dt>
+      <!-- Display ing5_metr start -->
+      <dd>
+        <%= @recipe.ing5_metr %>
+      </dd>
+      <!-- Display ing5_metr end -->
+
+      <dt>
+        Total calories
+      </dt>
+      <!-- Display total_calories start -->
+      <dd>
+        <%= @recipe.total_calories %>
+      </dd>
+      <!-- Display total_calories end -->
+
+      <dt>
+        Total proteins
+      </dt>
+      <!-- Display total_proteins start -->
+      <dd>
+        <%= @recipe.total_proteins %>
+      </dd>
+      <!-- Display total_proteins end -->
+
+      <dt>
+        Total fats
+      </dt>
+      <!-- Display total_fats start -->
+      <dd>
+        <%= @recipe.total_fats %>
+      </dd>
+      <!-- Display total_fats end -->
+
+      <dt>
+        Total carbohydrates
+      </dt>
+      <!-- Display total_carbohydrates start -->
+      <dd>
+        <%= @recipe.total_carbohydrates %>
+      </dd>
+      <!-- Display total_carbohydrates end -->
+
+      <dt>
+        Created at
+      </dt>
+      <!-- Display created_at start -->
+      <dd>
+        <%= time_ago_in_words(@recipe.created_at) %> ago
+      </dd>
+      <!-- Display created_at end -->
+
+      <dt>
+        Updated at
+      </dt>
+      <!-- Display updated_at start -->
+      <dd>
+        <%= time_ago_in_words(@recipe.updated_at) %> ago
+      </dd>
+      <!-- Display updated_at end -->
+    </dl>
+  </div>
+</div>
+
+<!-- Show Page Customization starts -->
+
+<!-- Show Page Customization end -->
